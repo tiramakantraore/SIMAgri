@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="SIMAgri dev" uuid="f4058e35-5017-4bd2-82f4-e17ce40bd048">
+      <user-name>root</user-name>
+      <user-password>dfc8dfcbdfc8dfcfdfc7dfc8dfcb</user-password>
+      <schema-pattern>simagri_new.*</schema-pattern>
+      <default-schemas>simagri_new.*</default-schemas>
+    </data-source>
+  </component>
+</project>

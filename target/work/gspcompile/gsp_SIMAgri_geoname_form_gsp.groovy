@@ -1,0 +1,110 @@
+import org.codehaus.groovy.grails.plugins.metadata.GrailsPlugin
+import org.codehaus.groovy.grails.web.pages.GroovyPage
+import org.codehaus.groovy.grails.web.taglib.*
+import org.codehaus.groovy.grails.web.taglib.exceptions.GrailsTagException
+import org.springframework.web.util.*
+import grails.util.GrailsUtil
+
+class gsp_SIMAgri_geoname_form_gsp extends GroovyPage {
+public String getGroovyPageFileName() { "/WEB-INF/grails-app/views/geoname/_form.gsp" }
+public Object run() {
+Writer out = getOut()
+Writer expressionOut = getExpressionOut()
+registerSitemeshPreprocessMode()
+printHtmlPart(0)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'geonameId', 'error'))
+printHtmlPart(1)
+invokeTag('message','g',5,['code':("geoname.geonameId.label"),'default':("Geoname Id")],-1)
+printHtmlPart(2)
+invokeTag('field','g',9,['type':("number"),'name':("geonameId"),'required':(""),'value':(fieldValue(bean: geonameInstance, field: 'geonameId'))],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'name', 'error'))
+printHtmlPart(4)
+invokeTag('message','g',14,['code':("geoname.name.label"),'default':("Name")],-1)
+printHtmlPart(5)
+invokeTag('textField','g',17,['name':("name"),'value':(geonameInstance?.name)],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'asciiname', 'error'))
+printHtmlPart(6)
+invokeTag('message','g',22,['code':("geoname.asciiname.label"),'default':("Asciiname")],-1)
+printHtmlPart(5)
+invokeTag('textField','g',25,['name':("asciiname"),'value':(geonameInstance?.asciiname)],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'latitude', 'error'))
+printHtmlPart(7)
+invokeTag('message','g',30,['code':("geoname.latitude.label"),'default':("Latitude")],-1)
+printHtmlPart(5)
+invokeTag('field','g',33,['type':("number"),'name':("latitude"),'value':(fieldValue(bean: geonameInstance, field: 'latitude'))],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'longitude', 'error'))
+printHtmlPart(8)
+invokeTag('message','g',38,['code':("geoname.longitude.label"),'default':("Longitude")],-1)
+printHtmlPart(5)
+invokeTag('field','g',41,['type':("number"),'name':("longitude"),'value':(fieldValue(bean: geonameInstance, field: 'longitude'))],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'featureClass', 'error'))
+printHtmlPart(9)
+invokeTag('message','g',46,['code':("geoname.featureClass.label"),'default':("Feature Class")],-1)
+printHtmlPart(5)
+invokeTag('textField','g',49,['name':("featureClass"),'value':(geonameInstance?.featureClass)],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'featureCode', 'error'))
+printHtmlPart(10)
+invokeTag('message','g',54,['code':("geoname.featureCode.label"),'default':("Feature Code")],-1)
+printHtmlPart(5)
+invokeTag('textField','g',57,['name':("featureCode"),'value':(geonameInstance?.featureCode)],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'countryCode', 'error'))
+printHtmlPart(11)
+invokeTag('message','g',62,['code':("geoname.countryCode.label"),'default':("Country Code")],-1)
+printHtmlPart(5)
+invokeTag('textField','g',65,['name':("countryCode"),'value':(geonameInstance?.countryCode)],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'cc2', 'error'))
+printHtmlPart(12)
+invokeTag('message','g',70,['code':("geoname.cc2.label"),'default':("Cc2")],-1)
+printHtmlPart(5)
+invokeTag('textField','g',73,['name':("cc2"),'value':(geonameInstance?.cc2)],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'population', 'error'))
+printHtmlPart(13)
+invokeTag('message','g',78,['code':("geoname.population.label"),'default':("Population")],-1)
+printHtmlPart(5)
+invokeTag('field','g',81,['type':("number"),'name':("population"),'value':(fieldValue(bean: geonameInstance, field: 'population'))],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'elevation', 'error'))
+printHtmlPart(14)
+invokeTag('message','g',86,['code':("geoname.elevation.label"),'default':("Elevation")],-1)
+printHtmlPart(5)
+invokeTag('field','g',89,['type':("number"),'name':("elevation"),'value':(fieldValue(bean: geonameInstance, field: 'elevation'))],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'dem', 'error'))
+printHtmlPart(15)
+invokeTag('message','g',94,['code':("geoname.dem.label"),'default':("Dem")],-1)
+printHtmlPart(5)
+invokeTag('field','g',97,['type':("number"),'name':("dem"),'value':(fieldValue(bean: geonameInstance, field: 'dem'))],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'timeZone', 'error'))
+printHtmlPart(16)
+invokeTag('message','g',102,['code':("geoname.timeZone.label"),'default':("Time Zone")],-1)
+printHtmlPart(5)
+invokeTag('textField','g',105,['name':("timeZone"),'value':(geonameInstance?.timeZone)],-1)
+printHtmlPart(3)
+expressionOut.print(hasErrors(bean: geonameInstance, field: 'modificationDate', 'error'))
+printHtmlPart(17)
+invokeTag('message','g',110,['code':("geoname.modificationDate.label"),'default':("Modification Date")],-1)
+printHtmlPart(5)
+invokeTag('datePicker','g',114,['name':("modificationDate"),'precision':("day"),'value':(geonameInstance?.modificationDate),'default':("none")],-1)
+printHtmlPart(18)
+}
+public static final Map JSP_TAGS = new HashMap()
+protected void init() {
+	this.jspTags = JSP_TAGS
+}
+public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
+public static final long LAST_MODIFIED = 1359780936387L
+public static final String EXPRESSION_CODEC = 'none'
+public static final String STATIC_CODEC = 'none'
+public static final String OUT_CODEC = 'none'
+public static final String TAGLIB_CODEC = 'none'
+}

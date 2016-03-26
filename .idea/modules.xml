@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/0-inplacePlugin.iml" filepath="$PROJECT_DIR$/0-inplacePlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-inplacePlugin.iml" filepath="$PROJECT_DIR$/5-inplacePlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9-inplacePlugin.iml" filepath="$PROJECT_DIR$/9-inplacePlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SIMAgri.iml" filepath="$PROJECT_DIR$/SIMAgri.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SIMAgri-grailsPlugins.iml" filepath="$PROJECT_DIR$/SIMAgri-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/excelImport-inplacePlugin.iml" filepath="$PROJECT_DIR$/excelImport-inplacePlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/export-inplacePlugin.iml" filepath="$PROJECT_DIR$/export-inplacePlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filterpane-inplacePlugin.iml" filepath="$PROJECT_DIR$/filterpane-inplacePlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tropoWebapiGrails-inplacePlugin.iml" filepath="$PROJECT_DIR$/tropoWebapiGrails-inplacePlugin.iml" />
+    </modules>
+  </component>
+</project>
